@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "hello abhishek " << endl;
+    int a;
+    cin >> a;
+    cout << a;
+    cout << "sizeof" << sizeof(a) << endl;
+    float b;
+    cout << "sizeof" << sizeof(b) << endl;
+    char c;
+    cout << "sizeof" << sizeof(c) << endl;
+    bool d;
+    cout << "sizeof" << sizeof(d) << endl;
+    long long int li;
+    cout << "sizeof" << sizeof(li) << endl;
+    short int si;
+    cout << "sizeof" << sizeof(si) << endl;
+    return 0;
+}
