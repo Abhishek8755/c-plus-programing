@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+int main(){
+    int choclate;
+    cin>>choclate;
+    int wrapper;
+    wrapper=choclate;
+    while(wrapper>1){
+        int c= wrapper/3;
+        choclate+=c;
+        wrapper=wrapper%3;
+        wrapper +=c;
+    }
+    cout<<choclate;
+    
+    
+    return 0;
+}
