@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+int getbit(int n , int pos){
+    return((n&(1<<pos))!=0);
+}
+int main()
+{
+    cout<<getbit(5,2)<<endl;
+    return 0;
+}
+
+
+clear bit code
+#include <iostream>
+
+using namespace std;
+int clearbit(int n , int pos){
+    int mask= ~(1<<pos);
+    return(n&mask);
+}
+int main()
+{
+    cout<<clearbit(5,0)<<endl;
+    return 0;
+}
+
+updatebit code_
+
+
+
+#include <iostream>
+
+using namespace std;
+int updatebit(int n , int pos , int value){
+    int mask= ~(1<<pos);
+    n=n&mask;
+    return(n|(value<<pos));
+    
+}
+int main()
+{
+    cout<<updatebit(5,0,0)<<endl;
+    return 0;
+}
